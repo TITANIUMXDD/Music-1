@@ -16,7 +16,7 @@ from ..config import BOT_USERNAME as BUN, OWNER, SUDO_USERS
 
 GROUPS = get_collections("GROUPS")
 
-
+#Titanium_op
 @hellbot.on_message(filters.command("stats") & filters.user(OWNER))
 async def botstats(_, message: Message):
     total, used, free = shutil.disk_usage(".")
