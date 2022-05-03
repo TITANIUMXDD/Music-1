@@ -39,7 +39,7 @@ async def _human_time_duration(seconds):
 async def start_(client: hellbot, message: Message):
     await message.reply_photo(
         photo=BOT_PIC,
-        caption=f"<b><i>Hello there!! \nI'm a Telegram voice chat music player by @Its_Hellbot. Enjoy my advanced features along with a simple and sexy interface</b></i>",
+        caption=f"<b><i>Hello there!! \nI'm a Telegram voice chat music player by @TITANIUM_XYZ. Enjoy my advanced features along with a simple and sexy interface</b></i>",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
