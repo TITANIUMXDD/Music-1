@@ -8,11 +8,11 @@ from .config import LOGGER_ID
 
 # Starting HellBot Music
 async def startup():
-    print("••• HellBot Music Starting •••")
+    print("••• Tɪᴛᴀɴɪᴜᴍ Music Starting •••")
     await client.start()
     await hellbot.start()
     await hellbot.send_message(LOGGER_ID, "#START \n\n<b><i>HellBot Music Started Successfully!!</b></i>")
-    print("••• HellBot Music Started •••")
+    print("••• Tɪᴛᴀɴɪᴜᴍ Music Started •••")
     await idle()
 
 
