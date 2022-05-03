@@ -5,7 +5,7 @@ from functools import wraps
 from .. import hellbot
 from ..config import OWNER
 
-
+#Hellop
 def owner_check(func):
     @wraps(func)
     async def okvai(message, query):
