@@ -88,7 +88,7 @@ async def song(client: hellbot, message: Message):
         except KeyError:
             gidtitle = message.chat.title
         await GROUPS.insert_one({"id": gid, "grp": gidtitle})
-        await clog("HELLBOT_MUSIC", f"Bot added to a new group\n\n{gidtitle}\nID: `{gid}`", "NEW_GROUP")
+        await clog("TITANIUM_MUSIC", f"Bot added to a new group\n\n{gidtitle}\nID: `{gid}`", "NEW_GROUP")
     user_ = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
     qry = message.text
     query = qry.split(" ", 1)
@@ -124,7 +124,7 @@ async def song(client: hellbot, message: Message):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
 
-        await message.reply_audio(audio_file, caption=rep, thumb=thumb_name, performer="[ †hê Hêllẞø† ]", title=title, duration=dur)
+        await message.reply_audio(audio_file, caption=rep, thumb=thumb_name, performer="[ †hê Tɪᴛᴀɴɪᴜᴍẞø† ]", title=title, duration=dur)
 
         await m.delete()
     except Exception as e:
@@ -172,7 +172,7 @@ async def ytmusic(client: hellbot, message: Message):
         except KeyError:
             gidtitle = message.chat.title
         await GROUPS.insert_one({"id": gid, "grp": gidtitle})
-        await clog("HELLBOT_MUSIC", f"Bot added to a new group\n\n{gidtitle}\nID: `{gid}`", "NEW_GROUP")
+        await clog("TITANIUM_MUSIC", f"Bot added to a new group\n\n{gidtitle}\nID: `{gid}`", "NEW_GROUP")
     qry = message.text
     query = qry.split(" ", 1)
     global is_downloading
@@ -268,7 +268,7 @@ async def saavn(_, message: Message):
         await message.reply_audio(
             audio=audio,
             title=title,
-            performer="[ †hê Hêllẞø† ]",
+            performer="[ †hê Tɪᴛᴀɴɪᴜᴍẞø† ]",
         )
         await msg.delete()
     except Exception as e:
@@ -285,7 +285,7 @@ async def search(client: hellbot, message: Message):
         except KeyError:
             gidtitle = message.chat.title
         await GROUPS.insert_one({"id": gid, "grp": gidtitle})
-        await clog("HELLBOT_MUSIC", f"Bot added to a new group\n\n{gidtitle}\nID: `{gid}`", "NEW_GROUP")
+        await clog("TITANIUM_MUSIC", f"Bot added to a new group\n\n{gidtitle}\nID: `{gid}`", "NEW_GROUP")
     if len(message.command) < 2:
         await message.reply_text("<b><i>Give something to search plis..</b></i>")
         return
