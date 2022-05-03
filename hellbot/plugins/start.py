@@ -50,8 +50,8 @@ async def start_(client: hellbot, message: Message):
                     InlineKeyboardButton("Commands 📌", callback_data="cbcmds"),
                 ],
                 [
-                    InlineKeyboardButton("Channel 🍀", url=f"https://t.me/its_hellbot"),
-                    InlineKeyboardButton("Source Code", url="https://github.com/The-HellBot/Music"),
+                    InlineKeyboardButton("Channel 🍀", url=f"https://t.me/Titanium_xyz"),
+                    InlineKeyboardButton("Source Code", url="https://github.com/TITANIUMXDD/Music"),
                 ],
                 [
                     InlineKeyboardButton("Deployed By", url=f"tg://openmessage?user_id={OWNER}")
